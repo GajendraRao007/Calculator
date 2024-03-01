@@ -8,33 +8,34 @@
 </head>
 <body>
     <div class="main">
-        <div class="display"></div>
+        <div id="display" class="display"></div>
+        <!-- <input type="text" id="calcInput" readonly> -->
         <div class="allbuttons">
             <div class="row-one">
-                <button class="r1btns">7</button>
-                <button class="r1btns">8</button> 
-                <button class="r1btns">9</button> 
-                <button id="cbtn" class="r4btns">C</button> 
-                <button id="acbtn" class="r4btns">AC</button> 
+                <button onclick="numbtn(event)" class="r1btns">7</button>
+                <button onclick="numbtn(event)" class="r1btns">8</button> 
+                <button onclick="numbtn(event)" class="r1btns">9</button> 
+                <button onclick="clearLastInput()" id="cbtn" class="r4btns">C</button> 
+                <button onclick="allClear()" id="acbtn" class="r4btns">AC</button> 
             </div>
             <div class="row-two">
-                <button class="r2btns">4</button>
-                <button class="r2btns">5</button> 
-                <button class="r2btns">6</button> 
-                <button class="r2btns">*</button> 
-                <button class="r2btns">-</button> 
+                <button onclick="numbtn(event)" class="r2btns">4</button>
+                <button onclick="numbtn(event)" class="r2btns">5</button> 
+                <button onclick="numbtn(event)" class="r2btns">6</button> 
+                <button onclick="numbtn(event)" class="r2btns">*</button> 
+                <button onclick="numbtn(event)" class="r2btns">-</button> 
             </div>
             <div class="row-three">
-                <button class="r3btns">1</button>
-                <button class="r3btns">2</button> 
-                <button class="r3btns">3</button> 
-                <button id="plusbtn" class="r3btns">+</button> 
-                <button id="equaltobtn" class="r3btns">=</button> 
+                <button onclick="numbtn(event)" class="r3btns">1</button>
+                <button onclick="numbtn(event)" class="r3btns">2</button> 
+                <button onclick="numbtn(event)" class="r3btns">3</button> 
+                <button onclick="numbtn(event)" id="plusbtn" class="r3btns">+</button> 
+                <button onclick="calculate()" id="equaltobtn" class="r3btns">=</button> 
             </div>
             <div class="row-four">
-                <button class="r1btns">/</button> 
-                <button class="r4btns">0</button>
-                <button class="r1btns">%</button> 
+                <button onclick="numbtn(event)" class="r1btns">/</button> 
+                <button onclick="numbtn(event)" class="r4btns">0</button>
+                <button onclick="numbtn(event)" class="r1btns">%</button> 
                 
             </div>
             
@@ -42,6 +43,6 @@
         </div>
 
     </div>
-    
+    <script src="main.js"></script>
 </body>
 </html>
